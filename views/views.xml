@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="scaffolded.list">
+      <field name="name">scaffolded list</field>
+      <field name="model">scaffolded.scaffolded</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="scaffolded.action_window">
+      <field name="name">scaffolded window</field>
+      <field name="res_model">scaffolded.scaffolded</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="scaffolded.action_server">
+      <field name="name">scaffolded server</field>
+      <field name="model_id" ref="model_scaffolded_scaffolded"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="scaffolded" id="scaffolded.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="scaffolded.menu_1" parent="scaffolded.menu_root"/>
+    <menuitem name="Menu 2" id="scaffolded.menu_2" parent="scaffolded.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="scaffolded.menu_1_list" parent="scaffolded.menu_1"
+              action="scaffolded.action_window"/>
+    <menuitem name="Server to list" id="scaffolded" parent="scaffolded.menu_2"
+              action="scaffolded.action_server"/>
+    -->
+  </data>
+</odoo>
